@@ -60,22 +60,20 @@ class App extends Component {
     return (
       <div className="mainBlock">
         <h1>Dumplings for Days</h1>
-        <br />
         <div className="buttonBlock">
           <button onClick={this.anotherDumpling} className="button">
             Give me another dumpling!
           </button>
         </div>
-        <br /> <br />
-        <img
-          src={this.state.dispImage}
-          alt="tasty dumpling"
-          style={{ width: "100%", height: "" }}
-        ></img>
-        <br />
-        <br />I am a {this.state.dispType} dumpling and I am filled with{" "}
-        {this.state.dispFilling}
-        <br />
+        <div className="image">
+          <img src={this.state.dispImage} alt="tasty dumpling"></img>
+        </div>
+        <div className="caption">
+          I am a {this.state.dispType} dumpling and I am filled with{" "}
+          {this.state.dispFilling}
+        </div>
+        <div className="footer">&copy; Kim Gray 2019</div>
+        <div></div>
       </div>
     );
   }
