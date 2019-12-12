@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.mainBlock {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  font-family: futura;
+}
+
+h1 {
+  text-align: center;
+}
+
+.buttonBlock {
+  margin: auto;
+  width: 200px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.button {
+  margin: auto;
+  font-family: futura;
+  border-radius: 10px;
+}

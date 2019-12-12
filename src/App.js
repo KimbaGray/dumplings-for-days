@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -57,17 +58,21 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="mainBlock">
+        <h1>Dumplings for Days</h1>
         <br />
-        <button onClick={this.anotherDumpling}>
-          Give me another dumpling!
-        </button>
+        <div className="buttonBlock">
+          <button onClick={this.anotherDumpling} className="button">
+            Give me another dumpling!
+          </button>
+        </div>
         <br /> <br />
         <img
           src={this.state.dispImage}
           alt="tasty dumpling"
-          style={{ width: "30%", height: "30%" }}
+          style={{ width: "100%", height: "" }}
         ></img>
+        <br />
         <br />I am a {this.state.dispType} dumpling and I am filled with{" "}
         {this.state.dispFilling}
         <br />
