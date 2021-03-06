@@ -8,7 +8,7 @@ class App extends Component {
       "crispy wonton",
       "siu mai classic",
       "har gau",
-      "potsticker"
+      "potsticker",
     ],
     dispType: "",
     filling: [
@@ -16,7 +16,7 @@ class App extends Component {
       "prawn",
       "pork and prawn",
       "prawn",
-      "lamb and coriander"
+      "lamb and coriander",
     ],
     dispFilling: "",
     image: [
@@ -24,17 +24,17 @@ class App extends Component {
       "https://rasamalaysia.com/wp-content/uploads/2015/01/chicken_wontons4.jpg",
       "https://healthynibblesandbits.com/wp-content/uploads/2019/05/Cantonese-Shumai-1.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/9/9c/Shrimp_dumplings.jpg",
-      "https://www.recipetineats.com/wp-content/uploads/2018/03/Potstickers_6.jpg"
+      "https://www.recipetineats.com/wp-content/uploads/2018/03/Potstickers_6.jpg",
     ],
     dispImage: "",
-    index: 0
+    index: 0,
   };
 
   componentDidMount() {
     this.setState({
       dispType: this.state.type[this.state.index],
       dispFilling: this.state.filling[this.state.index],
-      dispImage: this.state.image[this.state.index]
+      dispImage: this.state.image[this.state.index],
     });
   }
 
@@ -52,7 +52,7 @@ class App extends Component {
       index: newIndex,
       dispType: nextDumplingType,
       dispFilling: nextDumplingFilling,
-      dispImage: nextDumplingImage
+      dispImage: nextDumplingImage,
     });
   };
 
